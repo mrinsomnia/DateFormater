@@ -64,6 +64,7 @@ var DateFormater = (function() {
                 result = dn(date.getMinutes());
                 break;
             case "s":
+                date.setSeconds(date.getSeconds() + add);
                 result = dn(date.getSeconds());
                 break;
             case "ms":
